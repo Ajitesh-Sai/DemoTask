@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.loginCard {
+    width: auto;
+    margin: 10%;
+    padding: 10px;    
+    background-color: #f9f9f9 ;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    /* border: 1px solid #ccc; */
+}
+
+.formElement {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.loginCard h1 {
+    padding: 5px;
+    font-size: 36px;
+    color: green;
+}
+.loginCard h2 {
+    padding: 10px;
+    padding-top: 2px;
+    font-size: 16px;
+}
+
+.formElement__label {
+    font-weight: 700;
+    margin: 8px;
+    padding: 8px;
+    display: block;
+    margin-bottom: 0;
+}
+
+.formElement__input{
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    margin: 10px;
+    width: 90%;
+    margin-top: 0px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.formElement__input:focus {
+    outline: none;
+    border: 1px solid darkgray;
+    background-color: rgb(255, 240, 245);
+}
+
+.formElement__button {
+    width: auto;
+    margin: 10px;
+}
+
+
+.body__img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#loginDiv{
+    display: block;
+}
+
+#ordersDiv {
+    display: none;
+}
+
+.loginCard p {
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+/* #orders {
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px #ccc;
+} */

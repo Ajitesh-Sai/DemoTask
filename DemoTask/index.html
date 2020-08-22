@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script> -->
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <img class="body__img" src="https://i.pinimg.com/originals/54/85/60/548560149e8c3d234e3a95ed164b9263.jpg">
+    <div id="loginDiv">
+    <div class="d-flex loginCard align-items-center flex-column">
+        <div class="d-flex align-items-center flex-column">        
+            <h1 class="display-5">Welcome</h1>
+            <h2 class="display-5">Please sign in / sign up to continue</h2>
+        </div>
+        <div>
+            <div class="formElement d-flex justify-content-center flex-column">
+                <label class="display-5 formElement__label"><i class="fas fa-user"></i> Enter your email</label>
+                <input type="text" class="formElement__input" id="email" placeholder="email" required>
+                <!-- <br> -->
+                <label class="display-5 formElement__label"><i class="fa fa-lock"></i> Enter your password</label>
+                <input type="password" class="formElement__input" id="password" placeholder="Password" required>
+                <!-- <br> -->
+                <button class="btn btn-success formElement__button" id="btnSignin">Sign in</button>
+                <div class="container">Do not have an account?<br>Enter your details above and sign up</div>
+                <button class="btn btn-success formElement__button" id="btnSignup">Sign up</button>                
+                <!-- <button class="btn btn-success formElement__button" id="btnSignout">Sign out</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container loginCard" style="width: 85%;" id="ordersDiv">
+<div  class="ordersDiv">
+    <h1>Welcome <span style="color: black;" id="uname"></span></h1>
+    <h2>Here is your list of orders:</h2>
+    <div id="orders"></div>
+    <button class="btn btn-success formElement__button hide" id="btnSignout">Sign out</button>
+</div>
+</div>
+<!-- <script src="homepage.js"></script> -->
+    
+<!-- <script src="login.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA2Di8IoqdFm--yj9pToc1L2C-g709mNn8",
+    authDomain: "orders-2f321.firebaseapp.com",
+    databaseURL: "https://orders-2f321.firebaseio.com",
+    projectId: "orders-2f321",
+    storageBucket: "orders-2f321.appspot.com",
+    messagingSenderId: "869946456067",
+    appId: "1:869946456067:web:de346db031b3d15970f636",
+    measurementId: "G-L4F19097ZC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="app.js"></script>
+</body>
+</html>
